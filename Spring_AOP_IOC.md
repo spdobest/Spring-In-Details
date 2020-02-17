@@ -17,5 +17,40 @@ Two of the most fundamental and important packages in spring are:
 - or.springframework.beans
 - or.springframework.context  
 
-
+Code in these packages provides the basis for spring's ***Inversion control-IOC*** (alteranatively called Dependency Injection) eatures.  
+  
+The ***BeanFactory*** provides an advance configuration mechanism capable of managing beans (Objects) of any nature, Using potentially any kind of storage facility.  
+  
+The ***ApplicationContext*** builds on top of the ***BeanFactory*** and adds other functionality such as :  
+- Easier integration with spring AOP features  
+- Message Resource handling (for use in intenationalization)  
+- Event propagation  
+- Declarative mechanism to create the applicationContext  
+  
+The core API in spring is very limited and it generally involves in :  
+- Configuration  
+- Creating  
+- and Making associatios  
+between various Business components.  
+  
+Spring refers to these business components as Beans.  
+  
+The following are the core classes or the interfaces that are available in the spring for achieving the goal.  
+- Resource   
+- BeanFactory  
+  
+Interface for a resource descriptor that abstracts from the actual type of underlying resource, such as a file or class path resource.  
+  
+Package: org.springframework.core.io  
+  
+various classes which provides concrete implementation of **Recource** are  
+- FileSystemResource  
+-ClasspathResource  
+-UrlResource  
+-ByteArrayResource  
+-InputStreamResource  
+-ServletContextResource  
+  
+  
+  
 ```
